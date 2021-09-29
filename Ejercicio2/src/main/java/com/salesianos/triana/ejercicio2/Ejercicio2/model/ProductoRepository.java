@@ -1,4 +1,4 @@
-package com.salesianos.triana.ejercicio2.Ejercicio2;
+package com.salesianos.triana.ejercicio2.Ejercicio2.model;
 
 import com.salesianos.triana.ejercicio2.Ejercicio2.model.Producto;
 import org.springframework.data.jpa.repository.JpaRepository;
