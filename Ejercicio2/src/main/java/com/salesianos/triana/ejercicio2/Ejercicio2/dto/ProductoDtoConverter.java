@@ -7,13 +7,15 @@ import org.springframework.stereotype.Component;
 public class ProductoDtoConverter {
 
     public Producto createProductoDtoToProducto(CreateProductoDto c) {
-        return new Producto(
+        Producto product = new Producto(
                 c.getNombre(),
                 c.getDesc(),
                 c.getPvp(),
                 c.getCategoria(),
-                c.getImagenes()
+                c.getImagenes() == null ? null : new java.util.ArrayList<>(c.getImagenes())
         );
+        if (c.getCategoria() != null) c.getCategoria().addProducto(product);
+        return product;
     }
 
     public GetProductoDto productoToGetProductoDto(Producto p) {
@@ -22,7 +24,7 @@ public class ProductoDtoConverter {
         result.setDesc(p.getDesc());
         result.setCategoria(p.getCategoria());
         result.setPvp(p.getPvp());
-        result.setImagenes(p.getImagenes());
+        result.setImagenes(p.getImagenes() == null ? null : new java.util.ArrayList<>(p.getImagenes()));
         return result;
     }
 }

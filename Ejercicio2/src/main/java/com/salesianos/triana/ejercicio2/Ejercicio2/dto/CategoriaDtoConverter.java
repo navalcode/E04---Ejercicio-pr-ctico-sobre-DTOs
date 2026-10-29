@@ -16,7 +16,7 @@ public class CategoriaDtoConverter {
     public GetCategoriaDto categoriaToGetCategoriaoDto(Categoria c) {
         GetCategoriaDto result = new GetCategoriaDto();
         result.setNombre(c.getNombre());
-        result.setProductos(c.getProductos());
+        result.setProductos(new java.util.ArrayList<>(c.getProductos()));
         return result;
     }
 }

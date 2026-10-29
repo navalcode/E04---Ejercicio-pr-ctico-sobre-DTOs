@@ -1,0 +1,50 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "dcc1d61ea0ca0dedf6456f467d4c832743f68ea0144ec638a740ab231e3e4ee2"
+  },
+  {
+    "path": "DESIGN.md",
+    "sha256": "4e855f29659d191ae6fdfba585bf42fa26b3060d3b31e6b566039f77cd928594"
+  },
+  {
+    "path": "Ejercicio1/src/test/java/com/salesianos/triana/ejercicio2/Ejercicio2/StudentDtoContractTest.java",
+    "sha256": "1d0d57ce78413f7f1823a9bccfb1eaeeb673eda9d3e0ec4fb0734ff550bb8121"
+  },
+  {
+    "path": "Ejercicio2/src/main/java/com/salesianos/triana/ejercicio2/Ejercicio2/dto/CategoriaDtoConverter.java",
+    "sha256": "4345226b65ba4b555d533da96b41d4dc5bb00b7bfe0ccd0f2f2ca67f323425ea"
+  },
+  {
+    "path": "Ejercicio2/src/main/java/com/salesianos/triana/ejercicio2/Ejercicio2/dto/ProductoDtoConverter.java",
+    "sha256": "dfa170d705d0fc1ad86f6cdc6d2d633032533667264b4b79e7ab57495a4264b4"
+  },
+  {
+    "path": "Ejercicio2/src/main/java/com/salesianos/triana/ejercicio2/Ejercicio2/model/Categoria.java",
+    "sha256": "4423c0ee0df0656909135c08e077fef4aaee453d38774798c84ea48ab4c1ecba"
+  },
+  {
+    "path": "Ejercicio2/src/test/java/com/salesianos/triana/ejercicio2/Ejercicio2/ProductDtoContractTest.java",
+    "sha256": "fe46adfb190bc7fbe25afb58472a5c6a7bc7547cbba3dc27af7474d5caba7d59"
+  },
+  {
+    "path": "Ejercicio2/src/test/java/com/salesianos/triana/ejercicio2/Ejercicio2/ProductDtoJpaJourneyTest.java",
+    "sha256": "16a9a993a42c1f665caa6e05fa6a0826dd3f9e54b993642e63c54f9efc46ea28"
+  },
+  {
+    "path": "README.es.md",
+    "sha256": "453552c075d14dce631ffa2e1b0f0860fcae3aa71be5a6e6791dba491bc51152"
+  },
+  {
+    "path": "README.md",
+    "sha256": "e2d69689e428d4f9a862ba16c5a60df075c48f964ba9ba8fe39cfcd2c74e169e"
+  },
+  {
+    "path": "THIRD_PARTY.md",
+    "sha256": "f5c37dc2448e54c8f567c62ebcf105e8e5a184039a1c2bdad544db909be3b80a"
+  },
+  {
+    "path": "docs/verification.json",
+    "sha256": "eb0446ae2b9167376abc6e075f71811b7f5da744f037e47c327f8cafeacc2276"
+  }
+]

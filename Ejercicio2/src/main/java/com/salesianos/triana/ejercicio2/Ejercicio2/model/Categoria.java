@@ -25,16 +25,25 @@ public class Categoria {
 
     public Categoria(String nombre, List<Producto> productos) {
         this.nombre = nombre;
-        this.productos = productos;
+        if (productos != null) {
+            productos.forEach(java.util.Objects::requireNonNull);
+            productos.forEach(this::addProducto);
+        }
     }
 
-    public void addProducto(Producto p){
-        p.setCategoria(this);
-        this.productos.add(p);
+    public void addProducto(Producto product) {
+        java.util.Objects.requireNonNull(product, "product");
+        Categoria previous = product.getCategoria();
+        if (previous != null && previous != this) {
+            previous.getProductos().removeIf(item -> item == product);
+        }
+        product.setCategoria(this);
+        if (productos.stream().noneMatch(item -> item == product)) productos.add(product);
     }
 
-    public void removeProducto(Producto p){
-        this.productos.remove(p);
-        p.setCategoria(null);
+    public void removeProducto(Producto product) {
+        java.util.Objects.requireNonNull(product, "product");
+        productos.removeIf(item -> item == product);
+        if (product.getCategoria() == this) product.setCategoria(null);
     }
 }
